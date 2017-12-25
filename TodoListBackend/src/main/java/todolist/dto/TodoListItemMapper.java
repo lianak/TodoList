@@ -27,7 +27,6 @@ public final class TodoListItemMapper {
         dto.setId(entity.getId());
         dto.setCompleted(entity.isCompleted());
         dto.setTitle(entity.getTitle());
-
         return dto;
     }
 
