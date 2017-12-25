@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="todolistdb@localhost">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.4">
+    <root id="1"/>
+    <database id="2" parent="1" name="todolistdb">
+      <ObjectId>16385</ObjectId>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <database id="3" parent="1" name="postgres">
+      <ObjectId>12413</ObjectId>
+    </database>
+    <schema id="4" parent="2" name="public">
+      <ObjectId>2200</ObjectId>
+      <IntrospectionTimestamp>2017-12-24.17:01:02.928</IntrospectionTimestamp>
+      <IntrospectionStateNumber>561</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="5" parent="2" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+    </schema>
+    <schema id="6" parent="2" name="pg_toast">
+      <ObjectId>99</ObjectId>
+    </schema>
+    <schema id="7" parent="2" name="pg_temp_1">
+      <ObjectId>11848</ObjectId>
+    </schema>
+    <schema id="8" parent="2" name="pg_toast_temp_1">
+      <ObjectId>11849</ObjectId>
+    </schema>
+    <schema id="9" parent="2" name="information_schema">
+      <ObjectId>12125</ObjectId>
+    </schema>
+    <sequence id="10" parent="4" name="todolistitem_id_seq">
+      <ObjectId>16386</ObjectId>
+      <StateNumber>560</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <table id="11" parent="4" name="todolistitem">
+      <ObjectId>16388</ObjectId>
+      <StateNumber>561</StateNumber>
+    </table>
+    <column id="12" parent="11" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>560</StateNumber>
+      <SequenceName>todolistitem_id_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;todolistitem_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="13" parent="11" name="title">
+      <Position>2</Position>
+      <DataType>varchar(256)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>560</StateNumber>
+    </column>
+    <column id="14" parent="11" name="completed">
+      <Position>3</Position>
+      <DataType>boolean|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>560</StateNumber>
+    </column>
+    <index id="15" parent="11" name="todolistitem_pkey">
+      <ObjectId>16392</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="16" parent="11" name="todolistitem_pkey">
+      <ObjectId>16393</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>todolistitem_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>

@@ -1,0 +1,51 @@
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+
+#add-icon {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#show-completed-icon {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#uncompleted-div {
+  margin-left: 0;
+}
+
+#completed-div {
+  margin-top: 5px;
+  margin-left: 2px;
+}
+
+#uncompleted-div {
+  margin-top: 5px;
+  margin-left: 2px;
+  margin-bottom: 5px;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+#completed-div {
+  color: #4d4d4d;
+  margin-bottom: 15px;
+}
+
+#show-completed-div {
+  border-top: solid 1px #d9d9d9;
+  color: #4d4d4d;
+  margin-top: 7px;
+  padding-top: 12px;
+}
+
+.completed-list-item {
+  text-decoration: line-through;
+}
+

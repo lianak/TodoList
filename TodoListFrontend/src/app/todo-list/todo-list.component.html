@@ -1,0 +1,30 @@
+<div id="uncompleted-div">
+  <ul style="list-style-type:none">
+    <li *ngFor="let item of unCompleted">
+      <input type="checkbox" id="id1-{{item.id}}" (change)="onCheck($event, item)">
+      <label for="id1-{{item.id}}">{{item.title}}</label>
+    </li>
+    <li>
+      <input type="checkbox" id="id1">
+      <label for="id1">{{toBeAddedItem.title}}</label>
+    </li>
+  </ul>
+</div>
+
+<app-add-item [toBeAddedItem]="toBeAddedItem" [unCompleted]="unCompleted"></app-add-item>
+
+<div id="show-completed-div" *ngIf="completed" >
+  <i class="material-icons" id="show-completed-icon" (click)="onShowCompletedIconClick($event)">{{arrowValue}}</i>
+  <label for="show-completed-icon" >{{completed.length}} Completed items</label>
+</div>
+<div id="completed-div" *ngIf="showCompleted">
+  <ul style="list-style-type:none">
+    <li *ngFor="let item of completed" class="completed-list-item">
+      <input type="checkbox" id="id2-{{item.id}}" checked disabled>
+      <label for="id2-{{item.id}}">{{item.title}}</label>
+  </ul>
+</div>
+
+
+
+

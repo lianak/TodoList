@@ -1,0 +1,35 @@
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+
+#add-icon {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+
+#title-input {
+  margin: 10px 10000px 10px 20px;
+  border-radius: 3px;
+  border: solid 1px #A8A8A8;
+  padding: 4px;
+
+}
+
+#add-button {
+  margin-left: 20px;
+  border-radius: 3px;
+  border: solid 1px #A8A8A8;
+  padding: 4px;
+  color: #4d4d4d;
+  margin-bottom: 10px;
+}
+
+div{
+  color: #4d4d4d;
+}
+
+
+#new-item-div{
+  border-bottom: solid 1px;
+  border-top: solid 1px;
+  border-color: #A8A8A8;
+}
