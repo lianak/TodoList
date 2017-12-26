@@ -11,13 +11,12 @@ Vagrant.configure("2") do |config|
 end
 
 Vagrant::Config.run do |config|
-  config.vm.box = "ubuntu/trusty64"
-  config.vm.box_url = "https://atlas.hashicorp.com/ubuntu/boxes/trusty64"
+  config.vm.box = "ubuntu/xenial64"
+  config.vm.box_url = "https://atlas.hashicorp.com/ubuntu/boxes/xenial64"
   config.vm.host_name = "todo-list" 
 
-  config.vm.share_folder "bootstrap", "/mnt/bootstrap", ".", :create => true
-  config.vm.provision :shell, :path => "Vagrant-setup/bootstrap.sh"
+  config.vm.provision :shell, :path => "bootstrap.sh"
   
   # PostgreSQL Server port forwarding
-  config.vm.forward_port 5432, 15432
+  config.vm.forward_port 8081, 8081
 end

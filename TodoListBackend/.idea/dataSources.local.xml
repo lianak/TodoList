@@ -6,7 +6,7 @@
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
-      <user-name>todolistdb</user-name>
+      <user-name>postgres</user-name>
       <introspection-schemas>todolistdb:public</introspection-schemas>
     </data-source>
   </component>
